@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Layang Layang - Poster</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom Font Configuration */
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        
+        /* Subtle background texture for the poster */
+        .bg-texture {
+            background-color: #fffaf0;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f5e6d3' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        /* Smooth shadow for the poster */
+        .poster-shadow {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-neutral-900 min-h-screen flex items-center justify-center p-4 sm:p-8 font-poppins selection:bg-orange-500 selection:text-white">
 
+    <!-- Digital Poster Container -->
+    <div class="w-full max-w-lg bg-texture poster-shadow rounded-2xl overflow-hidden relative border-4 border-amber-900/20 flex flex-col">
+        
+        <!-- Header Image with Gradient Overlay -->
+        <!-- Using a relevant placeholder image (Indonesian Satay/Food) from Unsplash -->
+        <div class="h-72 w-full bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#fffaf0] via-[#fffaf0]/60 to-transparent"></div>
+            <!-- Decorative Top Badge -->
+            <div class="absolute top-4 right-4 bg-red-700 text-white text-xs font-bold uppercase tracking-wider py-1 px-3 rounded-full shadow-lg">
+                Nieuw in Sassenheim
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="px-6 sm:px-10 pb-10 flex-grow -mt-20 relative z-10 text-center">
+            
+            <!-- Titles -->
+            <h1 class="font-playfair text-5xl sm:text-6xl font-bold text-red-800 mb-2 leading-tight drop-shadow-sm">
+                Toko<br>Layang Layang
+            </h1>
+            <p class="text-amber-900 font-semibold text-sm sm:text-base tracking-wide mb-6 uppercase">
+                Authentieke Maleisische &<br>Indonesische Afhaalmaaltijden
+            </p>
+
+            <!-- Decorative Divider -->
+            <div class="flex items-center justify-center space-x-3 mb-6">
+                <div class="h-px w-12 bg-orange-400"></div>
+                <div class="text-orange-500">✦</div>
+                <div class="h-px w-12 bg-orange-400"></div>
+            </div>
+
+            <!-- Highlights / Menu Items -->
+            <div class="flex flex-wrap justify-center gap-2 mb-8">
+                <span class="bg-orange-100 text-orange-900 border border-orange-200 py-1.5 px-4 rounded-full text-sm font-medium shadow-sm transition-transform hover:scale-105 cursor-default">🍲 Rijsttafels</span>
+                <span class="bg-orange-100 text-orange-900 border border-orange-200 py-1.5 px-4 rounded-full text-sm font-medium shadow-sm transition-transform hover:scale-105 cursor-default">🥡 Wok2Go</span>
+                <span class="bg-orange-100 text-orange-900 border border-orange-200 py-1.5 px-4 rounded-full text-sm font-medium shadow-sm transition-transform hover:scale-105 cursor-default">🫓 Roti</span>
+                <span class="bg-orange-100 text-orange-900 border border-orange-200 py-1.5 px-4 rounded-full text-sm font-medium shadow-sm transition-transform hover:scale-105 cursor-default">🍢 Verse Saté</span>
+                <span class="bg-orange-100 text-orange-900 border border-orange-200 py-1.5 px-4 rounded-full text-sm font-medium shadow-sm transition-transform hover:scale-105 cursor-default">🧋 Bubble Tea</span>
+                <span class="bg-orange-100 text-orange-900 border border-orange-200 py-1.5 px-4 rounded-full text-sm font-medium shadow-sm transition-transform hover:scale-105 cursor-default">🍡 Mochi Ijs</span>
+            </div>
+
+            <!-- Information Card -->
+            <div class="bg-white/80 backdrop-blur-sm rounded-xl shadow-md p-5 mb-8 border border-amber-100 text-left">
+                <div class="flex items-start space-x-3 mb-3">
+                    <div class="mt-1 text-red-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <div>
+                        <p class="text-gray-800 font-semibold text-sm">Adres</p>
+                        <p class="text-gray-600 text-sm">Hortusplein 6, Sassenheim</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-3 mb-3">
+                    <div class="mt-1 text-red-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    </div>
+                    <div>
+                        <p class="text-gray-800 font-semibold text-sm">Telefoon & WhatsApp</p>
+                        <p class="text-gray-600 text-sm">06 82 37 10 56</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3 mb-4">
+                    <div class="mt-1 text-red-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <p class="text-gray-800 font-semibold text-sm">Openingstijden</p>
+                        <p class="text-gray-600 text-sm">Dinsdag t/m Zondag: <span class="font-medium">Open tot 20:00</span></p>
+                        <p class="text-red-500 text-xs font-medium mt-0.5">Maandag gesloten</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <a href="https://tokolayang.nl/" target="_blank" class="group relative inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-white transition-all duration-200 bg-gradient-to-r from-red-700 to-orange-600 border border-transparent rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-600 w-full sm:w-auto">
+                Bekijk Menu & Bestel!
+                <svg class="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+            
+            <!-- Website Link Bottom -->
+            <p class="mt-6 text-sm text-amber-800 font-medium hover:text-red-700 transition-colors">
+                <a href="https://tokolayang.nl/" target="_blank">www.tokolayang.nl</a>
+            </p>
+
+        </div>
+    </div>
+
+</body>
+</html>
