@@ -8,6 +8,4 @@ Teamleden & Rollen
 
 Takenlijst
 
-[ ] Video GitHub Issues bekijken en uitvoeren tot 03:03
-
-[ ] Maak voor elke rol een mooie issue
+[ ] zie issues
