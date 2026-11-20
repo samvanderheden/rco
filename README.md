@@ -2,9 +2,9 @@ Project Setup
 
 Teamleden & Rollen
 
-[ ] Sam van der Heden (GitHub: @samvanderheden) - Manager, Chef Kwaliteit
+[ ] Sam van der Heden (GitHub: @samvanderheden) - Manager, Chef marketing
 
-[ ] Roslan Noor (GitHub: @roslan1) - Chef Marketing, Chef Product
+[ ] Roslan Noor (GitHub: @roslan1) - Chef kwaliteit, Chef Product
 
 Takenlijst
 
